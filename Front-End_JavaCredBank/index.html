@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./src/imagens/logo.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css"> 
+
+    <link rel="stylesheet" href="./src/css/estilos.css"> 
+
+    <link rel="stylesheet" href="./src/css/responsivo.css"> 
+
+    <title>JavaCred Bank</title>
+</head>
+
+<body>
+
+    <div class="fundo-video">
+        <video class="video" autoplay loop muted>
+            <source src="./src/video/fundo-back.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header class="cabecalho"> 
+        <a> 
+            <img class="logo"
+                src="./src/imagens/logo.png" alt="logo banco">
+        </a>
+        <nav> 
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="informacoes">
+            <img class="imagem-titulo" src="./src/imagens/titulo1.png" alt="imagem do título do banco">
+            <p class="descricao">Mais que um banco,
+                Um Super banco que 
+                simplifica a sua vida   
+                Conta digital,compras on-line, passagens aéreas, investimentos, telemedicina e muito mais. </p>
+
+        </div>
+        <div class="container" >
+            <a class="links" id="paracadastro"></a>
+            <a class="links" id="paralogin"></a>
+            
+            <div class="content">      
+              <!--FORMULÁRIO DE LOGIN-->
+              <div id="login">
+                <form method="post" action=""> 
+                  <h1>Acessar</h1> 
+                  <p> 
+                    <label for="Conta_login">Sua Conta</label>
+                    <input id="Conta_login" name="Conta" required="required" type="number" placeholder="4575"/>
+                  </p>
+                  
+                  <p> 
+                    <label for="senha_login">Sua senha</label>
+                    <input id="senha_login" name="senha_login" required="required" type="password" placeholder="1234" /> 
+                  </p>
+                  
+                  <p> 
+                    <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                    <label for="manterlogado">Manter-me logado</label>
+                  </p>
+                  
+                  <p> 
+                    <input type="submit" value="Logar" /> 
+                  </p>
+                  
+                  <p class="link">
+                    Ainda não tem conta?
+                    <a href="#paracadastro">Abra sua conta</a>
+                  </p>
+                </form>
+              </div>
+        
+              <!--FORMULÁRIO DE CADASTRO-->
+              <div id="cadastro">
+                <form method="post" action=""> 
+                  <h1>Abra sua conta</h1> 
+                  
+                  <p> 
+                    <label for="nome_cad">Seu nome</label>
+                    <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Luiz Augusto" />
+                  </p>
+                  
+                  <p> 
+                    <label for="CPF_cad">Seu CPF</label>
+                    <input id="CPF_cad" name="CPF_cad" required="required" type="number" placeholder="458.***.91*-*3"/> 
+                  </p>
+                  
+                  <p> 
+                    <input type="submit" value="Cadastrar"/> 
+                  </p>
+                  
+                  <p class="link">  
+                    Já tem conta?
+                    <a href="#paralogin"> Acessar </a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <script src="src/js/index.js"></script>
+
+</body>
+
+</html>
